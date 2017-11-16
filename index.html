@@ -1,0 +1,483 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=1024">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <title>Cybertill and the future</title>
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Lobster|Inconsolata">
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
+
+    <link rel="stylesheet" href="index.css">
+  </head>
+
+  <body>
+    <div id="impress">
+      <div class="step" data-x="0" data-y="0">
+        <h1>Cybertill and the future</h1>
+        <img class="full" src="img/windows10launch.jpg">
+      </div>
+
+
+      <div class="step" data-x="2000" data-y="0">
+        <h1>JS - Learn once, apply everywhere</h1>
+        <p>Ionic, NativeScript, Electron, Node.js</p>
+      </div>
+
+
+      <div class="step" data-x="4000" data-y="0">
+        <h1>JS Coding standards</h1>
+
+        <ul>
+          <li>=== vs ==</li>
+          <li>camelCase vs snake_case</li>
+          <li>"" vs ''</li>
+        </ul>
+
+        <ul>
+          <li>Tools</li>
+          <li>Practices</li>
+          <li>Aquire an OCD</li>
+        </ul>
+      </div>
+      <div class="step" data-x="4000" data-y="1000">
+        <h1>Code hygiene tools</h1>
+        <ul>
+          <li>Use a linter</li>
+          <li>Static analysis</li>
+          <li>Editor Config</li>
+        </ul>
+      </div>
+      <div class="step" data-x="4000" data-y="2000">
+        <h1>Code hygiene practices</h1>
+        <ul>
+          <li>TDD</li>
+          <li>SOLID</li>
+          <li>KISS</li>
+          <li>DRY</li>
+          <li>Immutability</li>
+          <li>Referencial transparency</li>
+        </ul>
+      </div>
+      <div class="step" data-x="4000" data-y="3000">
+        <h1>Code hygiene OCD</h1>
+        <ul>
+          <li>Short</li>
+          <li>Simple</li>
+          <li>Be consistent</li>
+          <li>Challenge conventions</li>
+        </ul>
+      </div>
+      <div class="step" data-x="4000" data-y="4000">
+        <div class="wrap">
+          <div class="left">
+            <h1>Do</h1>
+            <pre>
+              <code class="javascript">
+function myFunc() {
+  return 'test';
+}
+              </code>
+            </pre>
+          </div>
+
+          <div class="right">
+            <h1>Don't</h1>
+            <pre>
+              <code class="javascript">
+ function myFunc() {
+   return 'test';
+
+ }
+              </code>
+            </pre>
+          </div>
+        </div>
+      </div>
+      <div class="step" data-x="4000" data-y="5000">
+        <div class="wrap">
+          <div class="left">
+            <h1>Do</h1>
+            <pre>
+              <code class="javascript">
+function myFunc(input) {
+  var output = input;
+
+  if (output.length) {
+    // ...
+  }
+
+  for (var i = 0; i < output.length; i++) {
+    // ...
+  }
+
+  return output;
+}
+              </code>
+            </pre>
+          </div>
+
+          <div class="right">
+            <h1>Don't</h1>
+            <pre>
+              <code class="javascript">
+function myFunc(input) {
+  var output = input;
+  if (output.length) {
+    // ...
+  }
+  for (var i = 0; i < output.length; i++) {
+    // ...
+  }
+  return output;
+}
+              </code>
+            </pre>
+          </div>
+        </div>
+      </div>
+      <div class="step" data-x="4000" data-y="6000">
+        <div class="wrap">
+          <div class="left">
+            <h1>Do</h1>
+            <pre>
+              <code class="javascript">
+var myStr1 = 'Key: ';
+var myStr2 = 'Value';
+
+console.log(myStr1 + myStr2);
+              </code>
+            </pre>
+          </div>
+
+          <div class="right">
+            <h1>Don't</h1>
+            <pre>
+              <code class="javascript">
+var myStr1 = "Key: ";
+var myStr2 = 'Value';
+
+console.log(myStr1 +  myStr2);
+              </code>
+            </pre>
+          </div>
+        </div>
+      </div>
+      <div class="step" data-x="4000" data-y="7000">
+        <div class="wrap">
+          <div class="left">
+            <h1>Do</h1>
+            <pre>
+              <code class="javascript">
+function tricky() {
+  return 1 + 1;
+}
+              </code>
+            </pre>
+          </div>
+
+          <div class="right">
+            <h1>Don't</h1>
+            <pre>
+              <code class="javascript">
+function tricky() {
+  return 1 + 1;
+}
+              </code>
+            </pre>
+          </div>
+        </div>
+      </div>
+      <div class="step" data-x="4000" data-y="8000">
+        <div class="wrap">
+          <div class="left">
+            <h1>Do</h1>
+            <pre>
+              <code class="javascript">
+var foo = 'short';
+var str = 'string';
+var bar = 'medim string';
+var test = 'some string';
+var thing = 'a longer string';
+              </code>
+            </pre>
+          </div>
+
+          <div class="right">
+            <h1>Don't</h1>
+            <pre>
+              <code class="javascript">
+var test = 'some string';
+var str = 'string';
+var thing = 'a longer string';
+var foo = 'short';
+var bar = 'medim string';
+              </code>
+            </pre>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="step" data-x="6000" data-y="0">
+        <h1>Write less code</h1>
+        <ul>
+          <li>more manageable</li>
+          <li>predictable</li>
+          <li>less bugs</li>
+        </ul>
+      </div>
+      <div class="step" data-x="6000" data-y="1000">
+        <h1>Delegate</h1>
+        <ul>
+          <li>Frameworks</li>
+          <li>Services</li>
+          <li>Packages</li>
+          <li>Practices</li>
+        </ul>
+      </div>
+
+
+      <div class="step timeline" data-x="8000" data-y="0">
+        <div class="pin pin-1"><span>Aug<br>08</span></div>
+        <img class="full" src="img/timeline.png">
+        <p>Retail store first commit: <b>trunk - mainline dev</b></p>
+        <img class="small" src="img/retail-store.png">
+      </div>
+
+
+      <div class="step timeline" data-x="8000" data-y="0">
+        <div class="pin pin-2"><span>Nov<br>08</span></div>
+        <img class="full" src="img/timeline.png">
+        <p>Jekyll initial release</p>
+        <img class="small" src="img/jekyll.png">
+      </div>
+
+
+      <div class="step timeline" data-x="8000" data-y="0">
+        <div class="pin pin-3"><span>Mar<br>09</span></div>
+        <img class="full" src="img/timeline.png">
+        <p>Apache Cordova is created</p>
+        <img class="small" src="img/cordova.png">
+      </div>
+
+
+      <div class="step timeline" data-x="8000" data-y="0">
+        <div class="pin pin-4"><span>May<br>09</span></div>
+        <img class="full" src="img/timeline.png">
+        <p>Node.js is released</p>
+        <img class="small" src="img/node.png">
+      </div>
+
+
+      <div class="step timeline" data-x="8000" data-y="0">
+        <div class="pin pin-5"><span>Jun<br>10</span></div>
+        <img class="full" src="img/timeline.png">
+        <p>Stripe received seed funding from Y Combinator</p>
+        <img class="small" src="img/stripe.png">
+      </div>
+
+
+      <div class="step timeline" data-x="8000" data-y="0">
+        <div class="pin pin-6"><span>Oct<br>10</span></div>
+        <img class="full" src="img/timeline.png">
+        <p>Angular.js is released</p>
+        <img class="small" src="img/angular.png">
+      </div>
+
+
+      <div class="step timeline" data-x="8000" data-y="0">
+        <div class="pin pin-7"><span>Feb<br>11</span></div>
+        <img class="full" src="img/timeline.png">
+        <p>Intercom is founded</p>
+        <img class="small" src="img/intercom.png">
+      </div>
+
+
+      <div class="step timeline" data-x="8000" data-y="0">
+        <div class="pin pin-8"><span>Sep<br>11</span></div>
+        <img class="full" src="img/timeline.png">
+        <p>Firebase initial release</p>
+        <img class="small" src="img/firebase.png">
+      </div>
+
+
+      <div class="step timeline" data-x="8000" data-y="0">
+        <div class="pin pin-9"><span>Aug<br>12</span></div>
+        <img class="full" src="img/timeline.png">
+        <p>Zapier initial release</p>
+        <img class="small" src="img/zapier.png">
+      </div>
+
+
+      <div class="step timeline" data-x="8000" data-y="0">
+        <div class="pin pin-10"><span>Jul<br>13</span></div>
+        <img class="full" src="img/timeline.png">
+        <p>Electron is released</p>
+        <img class="small" src="img/electron.png">
+      </div>
+
+
+      <div class="step timeline" data-x="8000" data-y="0">
+        <div class="pin pin-11"><span>Sep<br>13</span></div>
+        <img class="full" src="img/timeline.png">
+        <p>Snipcart initial release</p>
+        <img class="small" src="img/snipcart.jpg">
+      </div>
+
+
+      <div class="step timeline" data-x="8000" data-y="0">
+        <div class="pin pin-12"><span>Jun<br>14</span></div>
+        <img class="full" src="img/timeline.png">
+        <p>Google announces Material Design</p>
+        <img class="small" src="img/material.png">
+      </div>
+
+
+      <div class="step timeline" data-x="8000" data-y="0">
+        <div class="pin pin-13"><span>Oct<br>14</span></div>
+        <img class="full" src="img/timeline.png">
+        <p>HTML5 was released as a W3C Recommendation</p>
+        <img class="small" src="img/html5.png">
+      </div>
+
+
+      <div class="step timeline" data-x="8000" data-y="0">
+        <div class="pin pin-14"><span>Dec<br>14</span></div>
+        <img class="full" src="img/timeline.png">
+        <p>Formspree initial commit</p>
+        <img class="small" src="img/formspree.png">
+      </div>
+
+
+      <div class="step timeline" data-x="8000" data-y="0">
+        <div class="pin pin-15"><span>Feb<br>15</span></div>
+        <img class="full" src="img/timeline.png">
+        <p>Netlify is founded</p>
+        <img class="small" src="img/netlify.png">
+      </div>
+
+
+      <div class="step timeline" data-x="8000" data-y="0">
+        <div class="pin pin-16"><span>May<br>15</span></div>
+        <img class="full" src="img/timeline.png">
+        <p>Ionic 1.0 is released</p>
+        <img class="small" src="img/ionic.png">
+      </div>
+
+
+      <div class="step timeline" data-x="8000" data-y="0">
+        <div class="pin pin-17"><span>Sep<br>15</span></div>
+        <img class="full" src="img/timeline.png">
+        <p>GraphQL public release</p>
+        <img class="small" src="img/graphql.png">
+      </div>
+
+
+      <div class="step timeline" data-x="8000" data-y="0">
+        <div class="pin pin-18"><span>Feb<br>16</span></div>
+        <img class="full" src="img/timeline.png">
+        <p>Graph.cool is founded</p>
+        <img class="small" src="img/graphcool.png">
+      </div>
+
+
+      <div class="step timeline" data-x="8000" data-y="0">
+        <div class="pin pin-19"><span>Apr<br>16</span></div>
+        <img class="full" src="img/timeline.png">
+        <p>Meteor announces Apollo development</p>
+        <img class="small" src="img/apollo.png">
+        <div class="smallimgs">
+          <img src="img/airbnb.png">
+          <img src="img/klm.png">
+          <img src="img/opentable.png">
+          <img src="img/ticketmaster.png">
+          <img src="img/nyt.png">
+        </div>
+      </div>
+
+
+      <div class="step timeline" data-x="8000" data-y="0">
+        <div class="pin pin-20"><span>May<br>16</span></div>
+        <img class="full" src="img/timeline.png">
+        <p>JAM stack starts</p>
+        <img class="small" src="img/jamstack.png">
+      </div>
+
+
+      <div class="step timeline" data-x="8000" data-y="0">
+        <div class="pin pin-21"><span>Jun<br>16</span></div>
+        <img class="full" src="img/timeline.png">
+        <p>ES6 is released</p>
+        <img class="small" src="img/javascript.png">
+      </div>
+
+
+      <div class="step" data-x="10000" data-y="0">
+        <h1>Dashboard</h1>
+        <img class="full" src="img/dashboard.png">
+      </div>
+
+
+      <div class="step" data-x="12000" data-y="0">
+        <h1>Electron frame</h1>
+        <img class="full" src="img/electronframe.png">
+      </div>
+
+
+      <div class="step" data-x="14000" data-y="0">
+        <h1>Routing morphing</h1>
+        <img class="full" src="img/electronsearch.png">
+      </div>
+
+
+      <div class="step" data-x="16000" data-y="0">
+        <h1>More?</h1>
+        <ul>
+          <li>iPad app</li>
+          <li>iPhone app</li>
+          <li>Android app</li>
+          <li>Stand alone till</li>
+          <li>Static website manager</li>
+        </ul>
+      </div>
+
+
+      <div class="step" data-x="18000" data-y="0">
+        <h1>Get in more depth</h1>
+        <ul>
+          <li>JS/ES6 crash course</li>
+          <li>Angular crash course</li>
+          <li>Coding standards in depth</li>
+          <li>Native mobile apps with Ionic</li>
+          <li>Native desktop apps with Electron</li>
+          <li>Bulid an eCommerce static web site</li>
+          <li>GraphQL crash course (Apollo + GraphCool)</li>
+        </ul>
+      </div>
+
+
+      <div class="step" data-x="20000" data-y="0">
+        <h1>Questions</h1>
+        <img class="full" src="img/questions.gif">
+      </div>
+
+
+      <div class="step" data-x="20000" data-y="0">
+        <h1>Thank you</h1>
+        <a href=""></a>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/impress.js/0.5.3/impress.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
