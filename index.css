@@ -1,7 +1,7 @@
 /* Base */
 html {
-  color: #777;
-  font-size: 20px;
+  color: #555;
+  font-size: 24px;
   line-height: 1.5;
   min-height: 740px;
   font-family: 'Inconsolata', monospace;
@@ -11,9 +11,13 @@ html {
 }
 
 a {
+  width: 650px;
+  margin: 0 auto;
+  display: block;
   color: inherit;
   padding: 0 0.1em;
   transition: 0.5s;
+  text-align: center;
   border-radius: 0.2em;
   text-decoration: none;
   background: rgba(255, 255, 255, 0.5);
@@ -31,7 +35,7 @@ b {
 }
 
 h1 {
-  color: #999;
+  color: #444;
   font-size: 70px;
   text-align: center;
   font-weight: normal;
